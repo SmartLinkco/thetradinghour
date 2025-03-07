@@ -59,8 +59,41 @@ ul li a {
 	color: #f8bf0b;
 }
 
-.table-list li .green {
+/* .table-list li .green {
 	color: #2C2D3F;
+} */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup-buttons {
+	display: flex;
+	justify-content: center;
+
+    margin: 20px;
+}
+
+.popup-buttons .btn {
+    margin: 0 10px;
 }
 
 .inner-content h3 {

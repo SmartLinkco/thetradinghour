@@ -31,7 +31,32 @@ Version:	1.1
 * Preloader JS
 =========================================
 [End Activation Code]
-=========================================*/ 
+=========================================*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    const startChallengeButtons = document.querySelectorAll('.pop');
+    const popupOverlay = document.getElementById('challenge-popup');
+    const proceedButton = document.getElementById('proceed-button');
+    const cancelButton = document.getElementById('cancel-button');
+
+    startChallengeButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            popupOverlay.style.display = 'flex';
+        });
+    });
+
+    proceedButton.addEventListener('click', function () {
+        // Add your proceed logic here
+        alert('Proceeding to the challenge...');
+        popupOverlay.style.display = 'none';
+    });
+
+    cancelButton.addEventListener('click', function () {
+        popupOverlay.style.display = 'none';
+    });
+});
+
 (function($) {
     "use strict";
      $(document).on('ready', function() {
