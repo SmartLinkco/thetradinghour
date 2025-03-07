@@ -63,6 +63,10 @@ ul li a {
 	color: #2C2D3F;
 } */
 
+#challenge-popup {
+	z-index: 9999;
+}
+
 .popup-overlay {
     position: fixed;
     top: 0;
