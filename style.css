@@ -55,6 +55,10 @@ body{
 	color:#888;
 }
 
+ul li a {
+	color: blue;
+}
+
 .exness {
     font-family: Arial, sans-serif;
     background-color: #070e20;
@@ -1007,8 +1011,11 @@ sup {
 	background-size:cover;
 	background-repeat:no-repeat;
 }
-.fun-facts .single-fun {
-	
+.terms-inner h6 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #2C2D3F;
+	margin: 20px;
 }
 .fun-facts .single-fun i {
 	position: absolute;
