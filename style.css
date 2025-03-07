@@ -72,11 +72,7 @@ ul li a {
     display: block;
     margin-bottom: 5px;
 	color: #f8bf0b;
-	position: absolute;
-	top: -20px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+	
 
 }
 
