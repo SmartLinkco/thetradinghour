@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     proceedButton.addEventListener('click', function () {
         // Add your proceed logic here
-        alert('Proceeding to the challenge...');
+        window.location.href = 'https://forms.gle/U1YXbJZsL99tniTq7';
         popupOverlay.style.display = 'none';
     });
 
