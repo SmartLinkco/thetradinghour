@@ -1922,6 +1922,15 @@ sup {
 	text-align: left;
 	margin-top: 30px;
 }
+
+.single-table .table-bottom .btn {
+	color: #fff;
+	background: #f8bf0b;
+	font-weight: 500;
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
+}
 .pricing-table .table-list li {
 	position: relative;
 	color: #666;
