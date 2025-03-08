@@ -41,29 +41,44 @@ document.addEventListener('DOMContentLoaded', function () {
     const proceedButton = document.getElementById('proceed-button');
     const cancelButton = document.getElementById('cancel-button');
 
-    bronzeChallenge.forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            popupOverlay.classList.add('bronze');
-            popupOverlay.style.display = 'flex';
-        });
-    });
+	bronzeChallenge.forEach(button => {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			popupOverlay.classList.add('bronze');
+			popupOverlay.style.display = 'flex';
+			popupOverlay.style.opacity = '0';
+			setTimeout(() => {
+				popupOverlay.style.transition = 'opacity 0.5s';
+				popupOverlay.style.opacity = '1';
+			}, 10);
+		});
+	});
 
-    silverChallenge.forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            popupOverlay.classList.add('silver');
-            popupOverlay.style.display = 'flex';
-        });
-    });
+	silverChallenge.forEach(button => {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			popupOverlay.classList.add('silver');
+			popupOverlay.style.display = 'flex';
+			popupOverlay.style.opacity = '0';
+			setTimeout(() => {
+				popupOverlay.style.transition = 'opacity 0.5s';
+				popupOverlay.style.opacity = '1';
+			}, 10);
+		});
+	});
 
-    goldChallenge.forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            popupOverlay.classList.add('gold');
-            popupOverlay.style.display = 'flex';
-        });
-    });
+	goldChallenge.forEach(button => {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			popupOverlay.classList.add('gold');
+			popupOverlay.style.display = 'flex';
+			popupOverlay.style.opacity = '0';
+			setTimeout(() => {
+				popupOverlay.style.transition = 'opacity 0.5s';
+				popupOverlay.style.opacity = '1';
+			}, 10);
+		});
+	});
 
     proceedButton.addEventListener('click', function () {
         // Add your proceed logic here
