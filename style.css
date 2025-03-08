@@ -67,6 +67,19 @@ ul li a {
 	z-index: 9999;
 }
 
+#list {
+	margin: 5px;
+	color: gray;
+}
+
+#list:hover {
+	color: white;
+}
+
+.single-content:hover {
+	color: white;
+}
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -877,7 +890,7 @@ sup {
     margin: 0 auto;
     width: 80%;
     height: 90%;
-    background:#f8bf0b;
+    background:#463707;
     opacity: 0;
     filter: blur(10px);
     -webkit-transition: all .3s ease-out 0s;
