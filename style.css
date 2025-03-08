@@ -841,14 +841,9 @@ sup {
 	right:20px;
 }
 
-.owl-carousel img {
-	width: 100%;
-	height: auto;
-}
-
 @media (max-width: 768px) {
-	.owl-carousel img {
-		width: 80%;
+	#single-clients img {
+		width: 60%;
 		height: auto;
 	}
 }
@@ -2025,6 +2020,10 @@ sup {
 }
 .team .section-title p{
 	color:#fff;
+}
+
+.section-title h2{
+	margin: 20px 0;
 }
 .team .single-team {
 	background: #fff;
