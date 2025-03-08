@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			redirectUrl = 'https://forms.gle/2JN7VwrJGKCw4jTp8';
 		}
 		window.location.href = redirectUrl;
+		popupOverlay.classList.remove('bronze', 'silver', 'gold');
         popupOverlay.style.display = 'none';
     });
 
