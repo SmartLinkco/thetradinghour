@@ -34,21 +34,48 @@ Version:	1.1
 =========================================*/
 
 document.addEventListener('DOMContentLoaded', function () {
-    const startChallengeButtons = document.querySelectorAll('.pop');
+    const bronzeChallenge = document.querySelectorAll('.pop');
+    const silverChallenge = document.querySelectorAll('.pops');
+    const goldChallenge = document.querySelectorAll('.popss');
     const popupOverlay = document.getElementById('challenge-popup');
     const proceedButton = document.getElementById('proceed-button');
     const cancelButton = document.getElementById('cancel-button');
 
-    startChallengeButtons.forEach(button => {
+    bronzeChallenge.forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault();
+			popupOverlay.classList.add('bronze');
+            popupOverlay.style.display = 'flex';
+        });
+    });
+
+    silverChallenge.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+			popupOverlay.classList.add('silver');
+            popupOverlay.style.display = 'flex';
+        });
+    });
+
+    goldChallenge.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+			popupOverlay.classList.add('gold');
             popupOverlay.style.display = 'flex';
         });
     });
 
     proceedButton.addEventListener('click', function () {
-        // Add your proceed logic here
-        window.location.href = 'https://forms.gle/U1YXbJZsL99tniTq7';
+		// Add your proceed logic here
+		let redirectUrl = '';
+		if (popupOverlay.classList.contains('bronze')) {
+			redirectUrl = 'https://forms.gle/vJfUMq32yr5pu3VJ7';
+		} else if (popupOverlay.classList.contains('silver')) {
+			redirectUrl = 'https://forms.gle/U1YXbJZsL99tniTq7';
+		} else if (popupOverlay.classList.contains('gold')) {
+			redirectUrl = 'https://forms.gle/2JN7VwrJGKCw4jTp8';
+		}
+		window.location.href = redirectUrl;
         popupOverlay.style.display = 'none';
     });
 
