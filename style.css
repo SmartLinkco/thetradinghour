@@ -89,6 +89,10 @@ ul li a {
     z-index: 1000;
 }
 
+ol {
+	padding-left: 30px;
+}
+
 .popup-content {
     background: #fff;
     padding: 20px;
