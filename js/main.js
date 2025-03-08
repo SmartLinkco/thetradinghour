@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     bronzeChallenge.forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault();
-			popupOverlay.classList.add('bronze');
+            popupOverlay.classList.add('bronze');
             popupOverlay.style.display = 'flex';
         });
     });
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     silverChallenge.forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault();
-			popupOverlay.classList.add('silver');
+            popupOverlay.classList.add('silver');
             popupOverlay.style.display = 'flex';
         });
     });
@@ -60,23 +60,23 @@ document.addEventListener('DOMContentLoaded', function () {
     goldChallenge.forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault();
-			popupOverlay.classList.add('gold');
+            popupOverlay.classList.add('gold');
             popupOverlay.style.display = 'flex';
         });
     });
 
     proceedButton.addEventListener('click', function () {
-		// Add your proceed logic here
-		let redirectUrl = '';
-		if (popupOverlay.classList.contains('bronze')) {
-			redirectUrl = 'https://forms.gle/vJfUMq32yr5pu3VJ7';
-		} else if (popupOverlay.classList.contains('silver')) {
-			redirectUrl = 'https://forms.gle/U1YXbJZsL99tniTq7';
-		} else if (popupOverlay.classList.contains('gold')) {
-			redirectUrl = 'https://forms.gle/2JN7VwrJGKCw4jTp8';
-		}
-		window.location.href = redirectUrl;
-		popupOverlay.classList.remove('bronze', 'silver', 'gold');
+        // Add your proceed logic here
+        let redirectUrl = '';
+        if (popupOverlay.classList.contains('bronze')) {
+            redirectUrl = 'https://forms.gle/vJfUMq32yr5pu3VJ7';
+        } else if (popupOverlay.classList.contains('silver')) {
+            redirectUrl = 'https://forms.gle/U1YXbJZsL99tniTq7';
+        } else if (popupOverlay.classList.contains('gold')) {
+            redirectUrl = 'https://forms.gle/2JN7VwrJGKCw4jTp8';
+        }
+        window.location.href = redirectUrl;
+        popupOverlay.classList.remove('bronze', 'silver', 'gold');
         popupOverlay.style.display = 'none';
     });
 
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			autoplay:true,
 			autoplayTimeout:4000,
 			margin:15,
-			smartSpeed:300,
+			smartSpeed:400,
 			autoplayHoverPause:true,
 			loop:true,
 			nav:true,
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			items:1,
 			autoplay:false,
 			autoplayTimeout:5000,
-			smartSpeed: 400,
+			smartSpeed: 500,
 			autoplayHoverPause:true,
 			loop:true,
 			merge:true,

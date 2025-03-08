@@ -201,29 +201,35 @@
 									<form id="challenge-planner-form">
 										<div class="form-group">
 											<label for="challenge-type">Select Your Challenge</label>
-											<select id="challenge-type" class="form-control">
+											<select id="challenge-type" class="form-control" required>
+												<option value="" disabled selected>-- Select Challenge --</option>
 												<option value="bronze">Bronze Challenge - $20 Reward</option>
 												<option value="silver">Silver Challenge - $50 Reward</option>
 												<option value="gold">Gold Challenge - $100 Reward</option>
 											</select>
 										</div>
+										
 										<div class="form-group">
 											<label for="duration">Choose Your Duration</label>
-											<select id="duration" class="form-control">
-												<option value="14">2 weeks (14 days)</option>
-												<option value="30">1 month (30 days)</option>
-												<option value="60">2 months (60 days)</option>
-												<option value="90">3 months (90 days)</option>
+											<select id="duration" class="form-control" required>
+												<option value="" disabled selected>-- Choose Duration --</option>
+												<option value="14">2 Weeks (14 days)</option>
+												<option value="30">1 Month (30 days)</option>
+												<option value="60">2 Months (60 days)</option>
+												<option value="90">3 Months (90 days)</option>
 											</select>
 										</div>
+										
 										<div class="form-group">
 											<label for="trading-instrument">Trading Instrument</label>
 											<input type="text" id="trading-instrument" class="form-control" placeholder="e.g., EUR/USD, Gold">
 										</div>
+										
 										<div class="form-group">
 											<label for="position-size">Position Size per Trade (in lots)</label>
 											<input type="number" id="position-size" class="form-control" placeholder="e.g., 0.1, 0.5, 1">
 										</div>
+										
 										<button type="button" class="btn btn-primary" onclick="calculateRequirements()">Compute Requirements</button>
 									</form>
 									<div id="results" class="mt-4">
