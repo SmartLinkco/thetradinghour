@@ -95,6 +95,7 @@ ol {
 
 .popup-content {
 	background: #fff;
+	opacity: 95%;
 	padding: 20px;
 	border-radius: 5px;
 	text-align: center;
@@ -1897,39 +1898,39 @@ sup {
 	position: relative;
 	overflow: hidden;
 	margin: 15px 0;
-	padding:45px 35px 30px 35px;
+	padding:20px 35px 20px 35px;
 }
 /* Table Head */
 .pricing-table .single-table .table-head {
 	text-align:center;
 }
 .pricing-table .single-table .icon i{
-	font-size:65px;
+	font-size:55px;
 	color:#f8bf0b;
 }
 .pricing-table .single-table .title {
-	font-size: 21px;
+	font-size: 18px;
 	color: #2C2D3F;
-	margin-top: 30px;
-	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 .pricing-table .single-table .amount {
-	font-size:36px;
+	font-size:30px;
 	font-weight:600;
 	color:#f8bf0b;
 }
 .pricing-table .single-table .amount span{
 	display:inline-block;
-	font-size:14px;
+	font-size:12px;
 	font-weight:400;
 	color:#868686;
 	margin-left:8px;
 }
 /* Table List */
 .pricing-table .single-table .table-list {
-	padding: 10px 0;
+	padding: 5px 0;
 	text-align: left;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .single-table .table-bottom .btn {
@@ -1944,8 +1945,9 @@ sup {
 	position: relative;
 	color: #666;
 	text-transform: capitalize;
-	margin-bottom: 18px;
+	margin-bottom: 5px;
 	padding-right: 32px;
+	font-size: 12px;
 }
 .pricing-table .table-list li:last-child{
 	margin-bottom:0px;
@@ -1971,10 +1973,10 @@ sup {
 
 /* Table Bottom */
 .pricing-table .table-bottom {
-	margin-top: 25px;
+	margin-top: 18px;
 }
 .pricing-table .btn {
-	padding: 12px 25px;
+	padding: 10px 25px;
 	width: 100%;
 	color:#fff;
 }
@@ -3080,6 +3082,10 @@ sup {
 .appointment .form-group .list li:hover {
 	color:#fff;
 	background: #f8bf0b;
+}
+
+.appointment-image {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .appointment .appointment-image{}
 .appointment.single-page .button .btn{
