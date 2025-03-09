@@ -841,10 +841,24 @@ sup {
 	right:20px;
 }
 
+.alert {
+	padding: 20px;
+	color: #f44336;
+	margin: 5px;
+}
+
 @media (max-width: 768px) {
+	.owl-carousel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	#single-clients img {
 		width: 60%;
 		height: auto;
+		align-self: center;
 	}
 }
 
