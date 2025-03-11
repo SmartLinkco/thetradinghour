@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add your proceed logic here
         let redirectUrl = '';
         if (popupOverlay.classList.contains('bronze')) {
-            redirectUrl = 'https://forms.gle/vJfUMq32yr5pu3VJ7';
+            redirectUrl = 'bronzeChallenge.html';
         } else if (popupOverlay.classList.contains('silver')) {
-            redirectUrl = 'https://forms.gle/U1YXbJZsL99tniTq7';
+            redirectUrl = 'silverChallenge.html';
         } else if (popupOverlay.classList.contains('gold')) {
-            redirectUrl = 'https://forms.gle/2JN7VwrJGKCw4jTp8';
+            redirectUrl = 'goldChallenge.html';
         }
         window.location.href = redirectUrl;
         popupOverlay.classList.remove('bronze', 'silver', 'gold');
