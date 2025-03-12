@@ -60,6 +60,8 @@
 				<link rel="stylesheet" href="css/normalize.css">
 				<link rel="stylesheet" href="style.css">
 				<link rel="stylesheet" href="css/responsive.css">
+
+                <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
 				
 			</head>
 			<body>
@@ -151,9 +153,9 @@
 													<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 														<ul class="dropdown">
 															<li><a href="cplanner.html">Challenge Planner</a></li>
-															<li><a href="verifiedAccounts.html">Verified Accounts</a></li>
+                                                            <li><a href="verifiedAccounts.html">Verified Accounts</a></li>
 															<li><a href="ibchange.html">IB Partner Change</a></li>
-															<li><a href="termsAndConditions.html">Terms & Conditions</a></li>
+                                                            <li><a href="termsAndConditions.html">Terms & Conditions</a></li>
 														</ul>
 													</li>
 													<li><a href="">Contact Us</a></li>
@@ -176,38 +178,33 @@
 				</header>
 				<!-- End Header Area -->
 			
-				<!-- Breadcrumbs -->
-				<!-- <div class="breadcrumbs overlay">
-					<div class="container">
-						<div class="bread-inner">
-							<div class="row">
-								<div class="col-12">
-									<h2>Challenge Planner</h2>
-									<ul class="bread-list">
-										<li><a href="index.html">Home</a></li>
-										<li><i class="icofont-simple-right"></i></li>
-										<li class="active">Challenge Planner</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- End Breadcrumbs -->
-			
-				<!-- Start Challenge Planner Area -->
-                <section class="challenge-planner section" style="padding: 0;">
+                <!-- Start Challenge Planner Area -->
+                <section class="challenge-planner section" style="padding: ;">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="inner-content">
-                                    <!-- <h3>Participate inn the Challenge</h3> -->
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1pkACUQr02b5_O_CIhTMlcYmUEUD9idU8-IKDgFZUtIAjxg/viewform?usp=header" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    <h3>Verified Accounts</h3>
+                                    <h6>All accounts listed here are verified to undertake any of the Challenges.</br> Copy and paste your trading account number in the search bar to check if it has been verified.</h6>
+                                    <div style="overflow-x: scroll;">
+                                        <table id="example" class="display" style="width:100%; text-wrap: nowrap;">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>CLIENT ACCOUNT</th>
+                                                    <th>CURRENCY</th>
+                                                    <th>ACCOUNT TYPE</th>
+                                                    <th>COUNTRY</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+            
                 <!-- End Challenge Planner Area -->
 				
 				<!-- Footer Area -->
@@ -296,6 +293,21 @@
 				</footer>
 				<!--/ End Footer Area -->
 				
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+                <script type="text/javascript" src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+                <script>
+                    new DataTable('#example', {
+                        ajax: 'https://script.google.com/macros/s/AKfycbw0pRUHdWHuPxA-l52O9W7VIoEIoNHitm1ShKsMS8Q8218dTBcI0IHsWUNXr_NERW1yOg/exec',
+                        columns: [
+                            { data: 'ID' },
+                            { data: 'CLIENT ACCOUNT' },
+                            { data: 'CURRENCY' },
+                            { data: 'ACCOUNT TYPE' },
+                            { data: 'COUNTRY' }
+                        ]
+                    });
+                </script>
 				<!-- jquery Min JS -->
 				<script src="js/jquery.min.js"></script>
 				<!-- jquery Migrate JS -->
