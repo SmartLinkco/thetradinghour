@@ -100,6 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function closePopup() {
+	document.getElementById('popup-ad').style.display = 'none';
+}
+
 (function($) {
     "use strict";
      $(document).on('ready', function() {
